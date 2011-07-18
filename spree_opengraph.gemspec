@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.email             = 'info@bz-labs.com'
   s.homepage          = 'http://bz-labs.com'
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.files         = Dir['README.md', 'lib/**/*', 'app/**/*', 'config/*', 'db/*']
+  s.test_files    = Dir['spec/**/*', 'features/**/*']
   s.require_path = 'lib'
   s.requirements << 'none'
 
